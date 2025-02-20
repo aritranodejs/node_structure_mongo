@@ -70,11 +70,17 @@ app.get('/health', (req, res) => {
 });
 
 // API routes
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/api/auth');
 app.use('/api/auth', limiter, authRoutes); // Apply rate limiting for security
 
-const apiRoutes = require('./routes/api');
-app.use('/api', apiRoutes); 
+const userRoutes = require('./routes/api/user');
+app.use('/api/user', userRoutes); 
+
+const guestRoutes = require('./routes/api/guest');
+app.use('/api/guest', guestRoutes); 
+
+const adminRoutes = require('./routes/admin');
+app.use('/api/admin', adminRoutes);
 
 // Set the correct views directory
 app.set('views', path.resolve(__dirname, 'views'));

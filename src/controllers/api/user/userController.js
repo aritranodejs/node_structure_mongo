@@ -1,7 +1,7 @@
-const { response } = require('../../helpers/response');
+const { response } = require('../../../helpers/response');
 const { EmailMessageModel } = require('../../models/EmailMessage');
 const { Validator } = require('node-input-validator');
-const { User } = require('../../models/User');
+const { User } = require('../../../models/User');
 
 // Get All Users // 
 const index = async (req, res) => {
