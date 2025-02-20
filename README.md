@@ -21,7 +21,7 @@ npx migrate-mongo create users_table
 migrate-mongo create users_table
 
 # Folder Structure
-![image](https://github.com/user-attachments/assets/6624e39a-93eb-49bf-b6b7-e03b697b1c60)
+![image](https://github.com/user-attachments/assets/d80b6db2-dd06-4c75-b2b6-96d62fb366c5)
 
 # MONGODB METHOD
 📌 1. Retrieving Documents
